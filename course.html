@@ -5,6 +5,7 @@
     <title>University Website Design - DailyWebDesign</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -31,15 +32,15 @@
     <h1>Courses We Offer</h1>
     <p>Explore our diverse range of courses designed to equip you with the knowledge and skills for a successful career.</p>
     <div class="row">
-        <div class="course-col">
+        <div class="course-col" data-aos="fade-up" data-aos-delay="100">
             <h3>Intermediate</h3>
             <p>Our intermediate courses provide a strong foundation in your chosen field, perfect for bridging the gap between secondary education and university-level studies.</p>
         </div>
-        <div class="course-col">
+        <div class="course-col" data-aos="fade-up" data-aos-delay="200">
             <h3>Degree</h3>
             <p>Our undergraduate degree programs offer in-depth knowledge and practical experience. Choose from a wide array of specializations in arts, sciences, engineering, and business.</p>
         </div>
-        <div class="course-col">
+        <div class="course-col" data-aos="fade-up" data-aos-delay="300">
             <h3>Post Graduation</h3>
             <p>Advance your career with our postgraduate programs. Our master's and doctoral degrees are designed for deep specialization and research, led by expert faculty.</p>
         </div>
@@ -54,17 +55,17 @@
     <p>We provide state-of-the-art facilities to ensure our students have a comprehensive and enriching learning experience.</p>
 
     <div class="row">
-        <div class="facilities-col">
+        <div class="facilities-col" data-aos="zoom-in" data-aos-delay="100">
             <img decoding="async" src="img/library.png">
             <h3>World Class Library</h3>
             <p>Our library houses a vast collection of books, journals, and digital resources, offering a quiet and conducive environment for study and research.</p>
         </div>
-        <div class="facilities-col">
+        <div class="facilities-col" data-aos="zoom-in" data-aos-delay="200">
             <img decoding="async" src="img/basketball.png">
             <h3>Largest Play Ground</h3>
             <p>Stay active and healthy with our expansive sports facilities. We have grounds for various sports, including basketball, soccer, and track events.</p>
         </div>
-        <div class="facilities-col">
+        <div class="facilities-col" data-aos="zoom-in" data-aos-delay="300">
             <img decoding="async" src="img/cafeteria.png">
             <h3>Tasty and Healthy Food</h3>
             <p>Our campus cafeteria serves a variety of delicious and nutritious meals, focusing on healthy options to keep our students energized throughout the day.</p>
@@ -93,6 +94,10 @@
     function hideMenu() {
         navLinks.style.right = "-200px";
     }
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
 </script>
 
 </body>
