@@ -5,6 +5,7 @@
     <title>University Website Design - DailyWebDesign</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -28,14 +29,14 @@
 
 
 
-<section class="location">
+<section class="location" data-aos="fade-in">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2160.611471073663!2d81.57344355545641!3d27.532344403493028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3999a984a4b2fefb%3A0x942cdd3ea3f9a07c!2sB.B.S%20Group%20of%20Educational%20Institutes!5e0!3m2!1sen!2sin!4v1703841396641!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
 
 
 <section class="contact-us">
     <div class="row">
-        <div class="contact-col">
+        <div class="contact-col" data-aos="fade-right">
             <div>
                 <i class="fas fa-house"></i>
                 <span>
@@ -58,7 +59,7 @@
                 </span>
             </div>
         </div>
-        <div class="contact-col">
+        <div class="contact-col" data-aos="fade-left">
 
             <form action="form-handler.php" method="post">
                 <input type="text" name="name" placeholder="Enter Your Name" required>
@@ -88,5 +89,9 @@
 </section>
 
  <script src="script.js" defer></script> 
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+   AOS.init();
+ </script>
 </body>
 </html>
