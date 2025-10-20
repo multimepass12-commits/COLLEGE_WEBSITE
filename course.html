@@ -11,7 +11,7 @@
 
 <section class="sub-header">
     <nav>
-        <a href="index.html"><img decoding="async" src="img/logo.png"></a>
+        <a href="index.html"><img decoding="async" src="img/logo.png" alt="University Logo"></a>
         <div class="nav-links" id="navLinks">
             <i class="fas fa-times" onclick="hideMenu()"></i>
             <ul>
@@ -78,23 +78,15 @@
     <h4>About Us</h4>
     <p>We are committed to providing quality education and fostering a vibrant community of learners.<br> Our mission is to empower students to achieve their full potential.</p>
     <div class="icons">
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-linkedin"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
     </div>
-    <p>Made with <i class="far fa-heart"></i> by Daily Web Design</p>
+    <p>Made with <i class="fas fa-heart"></i> by Daily Web Design</p>
 </section>
 
-<script>
-    var navLinks = document.getElementById("navLinks");
-    function showMenu() {
-        navLinks.style.right = "0";
-    }
-    function hideMenu() {
-        navLinks.style.right = "-200px";
-    }
-</script>
+<script src="script.js" defer></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
