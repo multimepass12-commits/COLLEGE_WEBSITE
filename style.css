@@ -327,28 +327,113 @@ h3{
 }
 
 /*footer*/
-
-.footer{
+footer.footer {
     width: 100%;
-    text-align: center;
-    padding: 30px 0;
-
+    background: #222;
+    color: #aaa;
+    padding: 50px 0 20px;
+    margin-top: 100px;
 }
-.footer h4{
-    margin-bottom: 25px;
-    margin-top: 20px;
+
+.footer-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+
+.footer-col {
+    flex-basis: 22%;
+    padding: 10px;
+    text-align: left;
+    min-width: 200px;
+}
+
+.footer-col h3 {
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: left;
     font-weight: 600;
 }
 
-.icons .fa-brands{
-    color: #f44334;
-    margin: 0 13px;
-    cursor: pointer;
-    padding: 18px 0;
-
+.footer-col h4 {
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-weight: 600;
+    text-align: left;
 }
-.footer .fa-heart{
+
+.footer-col p {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
     color: #f44334;
+}
+
+.footer-col .icons a {
+    color: #aaa;
+    margin-right: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col .icons a:hover {
+    color: #f44334;
+}
+
+.footer-bottom {
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.footer-bottom .fa-heart {
+    color: #f44334;
+}
+
+@media(max-width: 700px){
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-col {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .footer-col h3, .footer-col h4 {
+        text-align: center;
+    }
 }
 
 
