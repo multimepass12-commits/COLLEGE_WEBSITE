@@ -5,6 +5,7 @@
     <title>University Website Design - Blog</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -30,7 +31,7 @@
 
 <section class="blog-content">
     <div class="row">
-        <div class="blog-left">
+        <div class="blog-left" data-aos="fade-up">
             <img decoding="async" src="img/certificate.jpg">
             <h2>Our Certificate & Online Programs For 2024</h2>
             <p>In today's fast-paced world, continuous learning is key to career advancement. Our university is proud to offer a diverse range of certificate and online programs designed to equip you with the latest skills and knowledge in your field. Whether you are looking to switch careers, gain a promotion, or simply expand your expertise, our flexible online courses provide the perfect solution.</p>
@@ -55,7 +56,7 @@
             </div>
 
         </div>
-        <div class="blog-right">
+        <div class="blog-right" data-aos="fade-left">
             <h3>Post Categories</h3>
             <div>
                 <span>Business Analytics</span>
@@ -112,6 +113,10 @@
     function hideMenu() {
         navLinks.style.right = "-200px";
     }
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
 </script>
 
 </body>
