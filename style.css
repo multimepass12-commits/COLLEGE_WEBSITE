@@ -85,11 +85,9 @@ nav img{
     transition: 1s;
 }
 
-nav .fa{
+nav .fas{
     display: none;
 }
-
-
 
 
 
@@ -119,7 +117,7 @@ nav .fa{
         z-index: 2;
         transition: 1s;
     }
-    nav .fa{
+    nav .fas{
         display: block;
         color: #fff;
         margin: 10px;
@@ -213,7 +211,7 @@ h3{
 }
 .layer h3{
     width: 100%;
-    font-weight: 5000;
+    font-weight: 500;
     color: #fff;
     font-size: 26px;
     bottom: 0;
@@ -270,7 +268,7 @@ h3{
     margin-bottom: 5%;
     text-align: left;
     background: #fff3f4;
-    padding: 25ox;
+    padding: 25px;
     cursor: pointer;
     display: flex;
 }
@@ -287,7 +285,8 @@ h3{
     margin-top: 15px;
     text-align: left;
 }
-.testimonials-col .fa{
+.testimonials-col .fas,
+.testimonials-col .far{
     color: #f44334;
 }
 
@@ -341,14 +340,14 @@ h3{
     font-weight: 600;
 }
 
-.icons .fa{
+.icons .fab{
     color: #f44334;
     margin: 0 13px;
     cursor: pointer;
     padding: 18px 0;
 
 }
-.fa-heart-o{
+.fa-heart{
     color: #f44334;
 }
 
@@ -490,7 +489,7 @@ h3{
     align-items: center;
     margin-bottom: 40px;
 }
-.contact-col div .fa{
+.contact-col div .fas{
     font-size: 20px;
     color: #f44334;
     margin: 10px;
