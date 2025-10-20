@@ -340,14 +340,14 @@ h3{
     font-weight: 600;
 }
 
-.icons .fab{
+.icons .fa-brands{
     color: #f44334;
     margin: 0 13px;
     cursor: pointer;
     padding: 18px 0;
 
 }
-.fa-heart{
+.footer .fa-heart{
     color: #f44334;
 }
 
