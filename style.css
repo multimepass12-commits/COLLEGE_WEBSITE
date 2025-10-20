@@ -169,6 +169,11 @@ p{
     display: flex;
     flex-direction: column;
 }
+.course-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
 .course-col p{
     flex-grow: 1;
 }
@@ -215,9 +220,18 @@ h3{
     transition: 0.5s;
 }
 
+.apply-btn i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
 .apply-btn:hover {
     background: #f44334;
     color: #fff;
+}
+
+.apply-btn:hover i {
+    transform: translateX(4px);
 }
 
 .section-icon {
