@@ -4,16 +4,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University Website Design - Blog</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
 <section class="sub-header">
     <nav>
-        <a href="index.html"><img decoding="async" src="img/logo.png"></a>
+        <a href="index.html"><img decoding="async" src="img/logo.png" alt="University Logo"></a>
         <div class="nav-links" id="navLinks">
-            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <i class="fas fa-times" onclick="hideMenu()"></i>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -22,7 +22,7 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
     </nav>
     <h1>Our Certificate & Online Programs For 2024</h1>
 </section>
@@ -102,18 +102,10 @@
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-brands fa-linkedin"></i>
     </div>
-    <p>Made with <i class="fa-solid fa-heart"></i> by Daily Web Design</p>
+    <p>Made with <i class="fas fa-heart"></i> by Daily Web Design</p>
 </section>
 
-<script>
-    var navLinks = document.getElementById("navLinks");
-    function showMenu() {
-        navLinks.style.right = "0";
-    }
-    function hideMenu() {
-        navLinks.style.right = "-200px";
-    }
-</script>
+<script src="script.js" defer></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
