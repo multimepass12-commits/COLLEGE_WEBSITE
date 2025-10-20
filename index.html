@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
@@ -41,15 +42,15 @@
     <h1>Courses We Offer</h1>
     <p>Explore a diverse range of programs designed to foster academic excellence and professional growth.</p>
     <div class="row">
-        <div class="course-col">
+        <div class="course-col" data-aos="fade-up" data-aos-delay="100">
             <h3>Intermediate</h3>
             <p>Our intermediate programs provide a strong foundation for higher education, focusing on core subjects and critical thinking skills to prepare students for future challenges.</p>
         </div>
-        <div class="course-col">
+        <div class="course-col" data-aos="fade-up" data-aos-delay="200">
             <h3>Degree</h3>
             <p>Choose from a wide array of undergraduate degrees in arts, sciences, and professional studies, all taught by experienced faculty dedicated to your success.</p>
         </div>
-        <div class="course-col">
+        <div class="course-col" data-aos="fade-up" data-aos-delay="300">
             <h3>Post Graduation</h3>
             <p>Advance your career with our specialized postgraduate programs. Gain in-depth knowledge and research experience in your chosen field to become an industry leader.</p>
         </div>
@@ -64,19 +65,19 @@
     <p>We have a diverse and widespread presence, with campuses in major cities across the globe.</p>
 
     <div class="row">
-        <div class="campus-col">
+        <div class="campus-col" data-aos="zoom-in" data-aos-delay="100">
             <img decoding="async" src="img/london.png">
             <div class="layer">
                 <h3>LONDON</h3>
             </div>
         </div>
-        <div class="campus-col">
+        <div class="campus-col" data-aos="zoom-in" data-aos-delay="200">
             <img decoding="async" src="img/newyork.png">
             <div class="layer">
                 <h3>NEW YORK</h3>
             </div>
         </div>
-        <div class="campus-col">
+        <div class="campus-col" data-aos="zoom-in" data-aos-delay="300">
             <img decoding="async" src="img/washington.png">
             <div class="layer">
                 <h3>WASHINGTON</h3>
@@ -92,17 +93,17 @@
     <p>We provide state-of-the-art facilities to ensure a comprehensive and enriching learning environment for our students.</p>
 
     <div class="row">
-        <div class="facilities-col">
+        <div class="facilities-col" data-aos="fade-right">
             <img decoding="async" src="img/library.png">
             <h3>World Class Library</h3>
             <p>Our library houses a vast collection of books, journals, and digital resources to support your academic journey.</p>
         </div>
-        <div class="facilities-col">
+        <div class="facilities-col" data-aos="fade-up">
             <img decoding="async" src="img/basketball.png">
             <h3>Largest Play Ground</h3>
             <p>Stay active and healthy with our expansive sports facilities, including basketball courts, soccer fields, and more.</p>
         </div>
-        <div class="facilities-col">
+        <div class="facilities-col" data-aos="fade-left">
             <img decoding="async" src="img/cafeteria.png">
             <h3>Tasty and Healthy Food</h3>
             <p>Our cafeteria offers a variety of delicious and nutritious meal options to fuel your mind and body.</p>
@@ -118,7 +119,7 @@
     <p>Discover what our students have to say about their experience and journey with us.</p>
 
     <div class="row">
-        <div class="testimonials-col">
+        <div class="testimonials-col" data-aos="fade-right">
             <img decoding="async" src="img/user2.jpg">
             <div>
                 <p>The support from the faculty is incredible. They are always willing to help and have pushed me to achieve things I never thought possible. A truly inspiring place to learn.</p>
@@ -130,7 +131,7 @@
                 <i class="far fa-star"></i>
             </div>
         </div>
-        <div class="testimonials-col">
+        <div class="testimonials-col" data-aos="fade-left">
             <img decoding="async" src="img/user1.jpg">
             <div>
                 <p>Being a part of this university has been a life-changing experience. The diverse community and the wealth of resources available have been instrumental in my personal and professional growth.</p>
@@ -147,7 +148,7 @@
 
 
 
-<section class="cta">
+<section class="cta" data-aos="zoom-in">
     <h1>Enroll for our various online courses <br> Anywhere from The World</h1>
     <a href="contact.html" class="hi-btn">CONTACT US</a>
 </section>
@@ -168,6 +169,10 @@
 </section>
     
 <script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
   
 
 
