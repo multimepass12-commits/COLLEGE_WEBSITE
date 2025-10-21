@@ -1,0 +1,140 @@
+[
+  {
+    "type": "Page",
+    "title": "Home - World's Biggest University",
+    "content": "Dedicated to excellence in teaching, research, and service, our university provides a transformative educational experience. Join a vibrant community of scholars and leaders.",
+    "url": "index.html"
+  },
+  {
+    "type": "Page",
+    "title": "About Us",
+    "content": "We are the world's largest university. Our expansive campus provides unparalleled opportunities for learning, research, and recreation, fostering a unique educational environment.",
+    "url": "about.html"
+  },
+  {
+    "type": "Page",
+    "title": "Our Courses",
+    "content": "Explore our diverse range of diploma courses designed to equip you with the knowledge and skills for a successful career in the medical field.",
+    "url": "course.html"
+  },
+  {
+    "type": "Blog",
+    "title": "Advancements in Medical Technology and Patient Care",
+    "content": "The healthcare landscape is constantly evolving, driven by groundbreaking research and technological innovation. Our university is at the forefront.",
+    "url": "blog.html"
+  },
+  {
+    "type": "Page",
+    "title": "Contact Us",
+    "content": "Get in touch with us. XYZ Road, B Building, Bahraich, Uttar Pradesh, INDIA. Email: info@dailywebdesign.com Phone: +91 95656 66535",
+    "url": "contact.html"
+  },
+  {
+    "type": "Course",
+    "title": "Diploma in CMS & ED",
+    "content": "Equips students with essential medical knowledge and skills for community health services, focusing on primary care and essential drug management.",
+    "url": "course.html"
+  },
+  {
+    "type": "Course",
+    "title": "Diploma in Medical Lab Technician",
+    "content": "Prepares you for a career in medical diagnostics, performing tests and analyzing samples in state-of-the-art labs.",
+    "url": "course.html"
+  },
+  {
+    "type": "Course",
+    "title": "Diploma in Ophthalmic Assistant",
+    "content": "Specialize in eye care and assist ophthalmologists. This program covers vision testing, patient care, and the use of ophthalmic equipment.",
+    "url": "course.html"
+  },
+  {
+    "type": "Course",
+    "title": "Diploma in Medical Radiography",
+    "content": "Learn to produce high-quality diagnostic images using various imaging technologies like X-rays, CT scans, and MRIs.",
+    "url": "course.html"
+  },
+  {
+    "type": "Course",
+    "title": "Diploma in Cath Lab Technology",
+    "content": "Train to assist cardiologists in cardiac catheterization procedures, operating advanced equipment to diagnose and treat heart conditions.",
+    "url": "course.html"
+  },
+  {
+    "type": "Course",
+    "title": "Diploma in Dental Hygiene",
+    "content": "Focus on preventative oral health care, learning to clean teeth, examine patients for oral diseases, and provide other essential dental care.",
+    "url": "course.html"
+  },
+  {
+    "type": "Course",
+    "title": "Diploma in X-Ray and ECG Technician",
+    "content": "Master the techniques of performing X-ray imaging and electrocardiograms (ECG) to help doctors diagnose medical issues.",
+    "url": "course.html"
+  },
+  {
+    "type": "Course",
+    "title": "Diploma in Clinical Neuro Technology",
+    "content": "Learn to record and analyze electrical activity in the brain and nervous system to help diagnose disorders like epilepsy.",
+    "url": "course.html"
+  },
+  {
+    "type": "Course",
+    "title": "Diploma in Dialysis & Technician",
+    "content": "Become proficient in operating dialysis machines to provide life-saving treatment for patients with kidney failure.",
+    "url": "course.html"
+  },
+  {
+    "type": "Course",
+    "title": "Diploma in MRI Technician",
+    "content": "Specialize in operating Magnetic Resonance Imaging (MRI) scanners to create detailed images of organs and tissues.",
+    "url": "course.html"
+  },
+  {
+    "type": "Course",
+    "title": "Diploma in CT Technician",
+    "content": "Train to use Computed Tomography (CT) scanners to produce cross-sectional images of the body, aiding in precise diagnosis.",
+    "url": "course.html"
+  },
+  {
+    "type": "Course",
+    "title": "Diploma in Ortho Assistant",
+    "content": "Learn to assist orthopedic surgeons in treating injuries and diseases of the musculoskeletal system, including casting and patient care.",
+    "url": "course.html"
+  },
+  {
+    "type": "Course",
+    "title": "Diploma in Critical Care Technician",
+    "content": "Gain skills to monitor and care for critically ill patients in intensive care units (ICUs), working with advanced life support equipment.",
+    "url": "course.html"
+  },
+  {
+    "type": "Course",
+    "title": "Diploma in Medical Assistant",
+    "content": "Develop a versatile skill set for both clinical and administrative tasks to support doctors and other healthcare professionals.",
+    "url": "course.html"
+  },
+  {
+    "type": "Course",
+    "title": "Diploma in Optometry and Contact Lens Technician",
+    "content": "Master the skills to assist optometrists in vision care, including conducting eye exams and fitting patients with contact lenses.",
+    "url": "course.html"
+  },
+  {
+    "type": "Facility",
+    "title": "World Class Library",
+    "content": "Our library houses a vast collection of books, journals, and digital resources to support your academic journey.",
+    "url": "index.html"
+  },
+  {
+    "type": "Facility",
+    "title": "Largest Play Ground",
+    "content": "Stay active and healthy with our expansive sports facilities, including basketball courts, soccer fields, and more.",
+    "url": "index.html"
+  },
+  {
+    "type": "Facility",
+    "title": "Tasty and Healthy Food",
+    "content": "Our cafeteria offers a variety of delicious and nutritious meal options to fuel your mind and body.",
+    "url": "index.html"
+  }
+]
