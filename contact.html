@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>University Website Design - DailyWebDesign</title>
+    <title>University Website Design - Contact Us</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
-<section class="sub-header">
+<header class="sub-header">
     <nav>
-        <a href="index.html"><img decoding="async" src="img/logo.png" alt="University Logo"></a>
+        <a href="index.html"><img decoding="async" src="img/logo.png" alt="Eduford University Logo"></a>
         <div class="nav-links" id="navLinks">
-            <i class="fas fa-times" id="menu-close"></i>
-            <div class="search-container">
-                <input type="text" id="searchInput" placeholder="Search...">
-                <ul id="searchResults"></ul>
+            <button class="nav-toggle close-btn" id="menu-close" aria-label="Close menu" aria-controls="navLinks" aria-expanded="true"><i class="fas fa-times"></i></button>
+            <div class="search-container" role="search">
+                <label for="searchInputContact" class="sr-only">Search</label>
+                <input type="text" id="searchInputContact" placeholder="Search...">
+                <ul id="searchResultsContact"></ul>
             </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -26,76 +28,76 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-        <i class="fas fa-bars" id="menu-open"></i>
+        <button class="nav-toggle open-btn" id="menu-open" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false"><i class="fas fa-bars"></i></button>
     </nav>
     <h1>Contact Us</h1>
-</section>
+</header>
 
+<main>
+    <section class="location" data-aos="fade-in">
+        <iframe title="Location of B.B.S Group of Educational Institutes" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2160.611471073663!2d81.57344355545641!3d27.532344403493028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3999a984a4b2fefb%3A0x942cdd3ea3f9a07c!2sB.B.S%20Group%20of%20Educational%20Institutes!5e0!3m2!1sen!2sin!4v1703841396641!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
 
-
-<section class="location" data-aos="fade-in">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2160.611471073663!2d81.57344355545641!3d27.532344403493028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3999a984a4b2fefb%3A0x942cdd3ea3f9a07c!2sB.B.S%20Group%20of%20Educational%20Institutes!5e0!3m2!1sen!2sin!4v1703841396641!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</section>
-
-
-<section class="contact-us">
-    <div class="row">
-        <div class="contact-col" data-aos="fade-right">
-            <div>
-                <i class="fas fa-house"></i>
-                <span>
-                    <h5>XYZ Road, B Building</h5>
-                    <p>Bahraich, Uttar Pradesh, INDIA</p>
-                </span>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col" data-aos="fade-right">
+                <address>
+                    <div>
+                        <i class="fas fa-house"></i>
+                        <span>
+                            <h5>XYZ Road, B Building</h5>
+                            <p>Bahraich, Uttar Pradesh, INDIA</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fas fa-phone"></i>
+                        <span>
+                            <h5><a href="tel:+919565666535">+91 95656 66535</a></h5>
+                            <p>Monday to Saturday, 10AM to 6PM</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                        <span>
+                            <h5><a href="mailto:info@dailywebdesign.com">info@dailywebdesign.com</a></h5>
+                            <p>Email us your query</p>
+                        </span>
+                    </div>
+                </address>
             </div>
-            <div>
-                <i class="fas fa-phone"></i>
-                <span>
-                    <h5>+91 95656 66535</h5>
-                    <p>Monday to Saturday, 10AM to 6PM</p>
-                </span>
-            </div>
-            <div>
-                <i class="fas fa-envelope"></i>
-                <span>
-                    <h5>info@dailywebdesign.com</h5>
-                    <p>Email us your query</p>
-                </span>
+            <div class="contact-col" data-aos="fade-left">
+                <form id="contactForm" action="form-handler.php" method="post" novalidate>
+                    <div class="form-group">
+                        <label for="contactName" class="sr-only">Name</label>
+                        <input type="text" id="contactName" name="name" placeholder="Enter Your Name" required>
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail" class="sr-only">Email</label>
+                        <input type="email" id="contactEmail" name="email" placeholder="Enter Email Address" required>
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactSubject" class="sr-only">Subject</label>
+                        <input type="text" id="contactSubject" name="subject" placeholder="Enter Your Subject" required>
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMessage" class="sr-only">Message</label>
+                        <textarea rows="8" id="contactMessage" name="message" placeholder="Message" required></textarea>
+                        <div class="error-message"></div>
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
             </div>
         </div>
-        <div class="contact-col" data-aos="fade-left">
-
-            <form id="contactForm" action="form-handler.php" method="post" novalidate>
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Enter Your Name">
-                    <div class="error-message"></div>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Enter Email Address">
-                    <div class="error-message"></div>
-                </div>
-                <div class="form-group">
-                    <input type="text" name="subject" placeholder="Enter Your Subject">
-                    <div class="error-message"></div>
-                </div>
-                <div class="form-group">
-                    <textarea rows="8" name="message" placeholder="Message"></textarea>
-                    <div class="error-message"></div>
-                </div>
-                <button type="submit" class="hi-btn red-btn">Send Message <i class="fas fa-paper-plane"></i></button>
-            </form>
-        </div>
-    </div>
-
-</section>
-
-
-
+    </section>
+</main>
 
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-col">
-            <a href="index.html"><img src="img/logo.png" alt="University Logo" class="footer-logo"></a>
+            <a href="index.html"><img src="img/logo.png" alt="Eduford University Logo" class="footer-logo"></a>
             <p>We are committed to providing a world-class education that prepares students to be leaders in their fields. Join us and become part of a tradition of excellence.</p>
         </div>
         <div class="footer-col">
@@ -110,22 +112,24 @@
         </div>
         <div class="footer-col">
             <h4>Contact Us</h4>
-            <p><i class="fas fa-map-marker-alt"></i> XYZ Road, B Building<br>Bahraich, Uttar Pradesh, INDIA</p>
-            <p><i class="fas fa-envelope"></i> Email: info@dailywebdesign.com</p>
-            <p><i class="fas fa-phone"></i> Phone: +91 95656 66535</p>
+            <address>
+                <p><i class="fas fa-map-marker-alt"></i> XYZ Road, B Building<br>Bahraich, Uttar Pradesh, INDIA</p>
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:info@dailywebdesign.com">info@dailywebdesign.com</a></p>
+                <p><i class="fas fa-phone"></i> Phone: <a href="tel:+919565666535">+91 95656 66535</a></p>
+            </address>
         </div>
         <div class="footer-col">
             <h4>Follow Us</h4>
             <div class="icons">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" aria-label="Visit our Facebook page"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" aria-label="Visit our Twitter profile"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" aria-label="Visit our Instagram profile"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="Visit our LinkedIn profile"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
     </div>
     <div class="footer-bottom">
-        <p>&copy; 2024 Eduford University. All Rights Reserved. Made with <i class="fas fa-heart"></i> by Daily Web Design</p>
+        <p>&copy; 2024 Eduford University. All Rights Reserved. Made with <span class="heart-icon" aria-hidden="true">❤️</span> by Daily Web Design</p>
     </div>
 </footer>
 
