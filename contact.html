@@ -14,6 +14,10 @@
         <a href="index.html"><img decoding="async" src="img/logo.png" alt="University Logo"></a>
         <div class="nav-links" id="navLinks">
             <i class="fas fa-times" id="menu-close"></i>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <ul id="searchResults"></ul>
+            </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -61,11 +65,23 @@
         </div>
         <div class="contact-col" data-aos="fade-left">
 
-            <form id="contactForm" action="form-handler.php" method="post">
-                <input type="text" name="name" placeholder="Enter Your Name" required>
-                <input type="email" name="email" placeholder="Enter Email Address" required>
-                <input type="text" name="subject" placeholder="Enter Your Subject" required>
-                <textarea rows="8" name="message" placeholder="Message" required></textarea>
+            <form id="contactForm" action="form-handler.php" method="post" novalidate>
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Enter Your Name">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Enter Email Address">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="subject" placeholder="Enter Your Subject">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <textarea rows="8" name="message" placeholder="Message"></textarea>
+                    <div class="error-message"></div>
+                </div>
                 <button type="submit" class="hi-btn red-btn">Send Message <i class="fas fa-paper-plane"></i></button>
             </form>
         </div>
