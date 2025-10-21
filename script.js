@@ -8,12 +8,14 @@ document.addEventListener('DOMContentLoaded', function () {
     if (menuOpen) {
         menuOpen.addEventListener('click', () => {
             navLinks.style.right = "0";
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
         });
     }
 
     if (menuClose) {
         menuClose.addEventListener('click', () => {
             navLinks.style.right = "-200px";
+            document.body.style.overflow = 'auto'; // Restore scrolling
         });
     }
 
