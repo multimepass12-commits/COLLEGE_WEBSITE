@@ -13,7 +13,7 @@
     <nav>
         <a href="index.html"><img decoding="async" src="img/logo.png" alt="University Logo"></a>
         <div class="nav-links" id="navLinks">
-            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <i class="fas fa-times" id="menu-close"></i>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -22,7 +22,7 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-        <i class="fas fa-bars" onclick="showMenu()"></i>
+        <i class="fas fa-bars" id="menu-open"></i>
     </nav>
     <h1>Latest in Medical & Health Sciences</h1>
 </section>
@@ -47,10 +47,10 @@
             <div class="comment-box">
                 <h3>Leave a comment</h3>
 
-                <form class="comment-form">
-                    <input type="text" placeholder="Enter Name" required>
-                    <input type="email" placeholder="Enter Email" required>
-                    <textarea rows="5" placeholder="Your Comment" required></textarea>
+                <form class="comment-form" id="commentForm">
+                    <input type="text" name="name" placeholder="Enter Name" required>
+                    <input type="email" name="email" placeholder="Enter Email" required>
+                    <textarea rows="5" name="comment" placeholder="Your Comment" required></textarea>
                     <button type="submit" class="hi-btn red-btn">POST COMMENT <i class="fas fa-paper-plane"></i></button>
                 </form>
             </div>
