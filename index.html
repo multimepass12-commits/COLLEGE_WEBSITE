@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>University Website Design - DailyWebDesign</title>
+    <title>University Website Design - Eduford</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
 </head>
 <body>
 
-<section class="header">
+<header class="header">
     <nav>
-        <a href="index.html"><img decoding="async" src="img/logo.png" alt="University Logo"></a>
+        <a href="index.html"><img decoding="async" src="img/logo.png" alt="Eduford University Logo"></a>
         <div class="nav-links" id="navLinks">
-            <i class="fas fa-times" id="menu-close"></i>
-            <div class="search-container">
-                <input type="text" id="searchInput" placeholder="Search...">
-                <ul id="searchResults"></ul>
+            <button class="nav-toggle close-btn" id="menu-close" aria-label="Close menu" aria-controls="navLinks" aria-expanded="true"><i class="fas fa-times"></i></button>
+            <div class="search-container" role="search">
+                <label for="searchInputHome" class="sr-only">Search</label>
+                <input type="text" id="searchInputHome" placeholder="Search...">
+                <ul id="searchResultsHome"></ul>
             </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -28,264 +28,139 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-        <i class="fas fa-bars" id="menu-open"></i>
+        <button class="nav-toggle open-btn" id="menu-open" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false"><i class="fas fa-bars"></i></button>
     </nav>
 
     <div class="text-box">
         <h1>World's Biggest University</h1>
         <p>Dedicated to excellence in teaching, research, and service, our university provides a transformative educational experience.<br>Join a vibrant community of scholars and leaders.</p>
-
-        <a href="about.html" class="hi-btn">Visit Us To Know More <i class="fas fa-arrow-right"></i></a>
-
+        <a href="about.html" class="btn btn-primary">Visit Us To Know More <i class="fas fa-arrow-right"></i></a>
     </div>
-</section>
+</header>
 
-
-
-<section class="course">
-    <h1>Diploma We Offer</h1>
-    <p>Explore a diverse range of programs designed to foster academic excellence and professional growth.</p>
-    <div class="row">
-        <div class="course-col" data-aos="fade-up" data-aos-delay="100">
-            <img src="https://soft.stjohncouncil.co.in/Upload/COMMUNITYMEDICALSERVICESANDESSENTIALDRUGS.png" alt="Diploma in CMS & ED" class="course-img">
-            <h3>Diploma in CMS & ED</h3>
-            <p>This program equips students with essential medical knowledge and skills for community health services, focusing on primary care and essential drug management.</p>
-            <div class="course-meta">
-                <span class="duration"><i class="fas fa-calendar-alt"></i> 2 Years</span>
-                <a href="contact.html" class="apply-btn">Apply Now <i class="fas fa-arrow-right"></i></a>
+<main>
+    <section class="course">
+        <h1>Diploma We Offer</h1>
+        <p>Explore a diverse range of programs designed to foster academic excellence and professional growth.</p>
+        <div class="row">
+            <div class="course-col" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://soft.stjohncouncil.co.in/Upload/COMMUNITYMEDICALSERVICESANDESSENTIALDRUGS.png" alt="Diploma in CMS & ED" class="course-img" loading="lazy">
+                <h3>Diploma in CMS & ED</h3>
+                <p>This program equips students with essential medical knowledge and skills for community health services, focusing on primary care and essential drug management.</p>
+                <div class="course-meta">
+                    <span class="duration"><i class="fas fa-calendar-alt"></i> 2 Years</span>
+                    <a href="contact.html" class="apply-btn">Apply Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="course-col" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://soft.stjohncouncil.co.in/Upload/COMMUNITYMEDICALSERVICESANDESSENTIALDRUGS.png" alt="Diploma in Medical Lab Technician" class="course-img" loading="lazy">
+                <h3>Diploma in Medical Lab Technician</h3>
+                <p>Gain hands-on experience in our state-of-the-art labs. This diploma prepares you for a career in medical diagnostics, performing tests and analyzing samples.</p>
+                <div class="course-meta">
+                    <span class="duration"><i class="fas fa-calendar-alt"></i> 2 Years</span>
+                    <a href="contact.html" class="apply-btn">Apply Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="course-col" data-aos="fade-up" data-aos-delay="300">
+                <img src="https://soft.stjohncouncil.co.in/Upload/COMMUNITYMEDICALSERVICESANDESSENTIALDRUGS.png" alt="Diploma in Ophthalmic Assistant" class="course-img" loading="lazy">
+                <h3>Diploma in Ophthalmic Assistant</h3>
+                <p>Specialize in eye care and assist ophthalmologists. This program covers vision testing, patient care, and the use of ophthalmic equipment.</p>
+                <div class="course-meta">
+                    <span class="duration"><i class="fas fa-calendar-alt"></i> 2 Years</span>
+                    <a href="contact.html" class="apply-btn">Apply Now <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
         </div>
-        <div class="course-col" data-aos="fade-up" data-aos-delay="200">
-            <img src="https://soft.stjohncouncil.co.in/Upload/COMMUNITYMEDICALSERVICESANDESSENTIALDRUGS.png" alt="Diploma in Medical Lab Technician" class="course-img">
-            <h3>Diploma in Medical Lab Technician</h3>
-            <p>Gain hands-on experience in our state-of-the-art labs. This diploma prepares you for a career in medical diagnostics, performing tests and analyzing samples.</p>
-            <div class="course-meta">
-                <span class="duration"><i class="fas fa-calendar-alt"></i> 2 Years</span>
-                <a href="contact.html" class="apply-btn">Apply Now <i class="fas fa-arrow-right"></i></a>
+    </section>
+
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>We have a diverse and widespread presence, with campuses in major cities across the globe.</p>
+        <div class="row">
+            <div class="campus-col" data-aos="zoom-in" data-aos-delay="100">
+                <img decoding="async" src="img/london.png" alt="Photo of London campus." loading="lazy">
+                <div class="layer">
+                    <h3>LONDON</h3>
+                </div>
+            </div>
+            <div class="campus-col" data-aos="zoom-in" data-aos-delay="200">
+                <img decoding="async" src="img/newyork.png" alt="Photo of New York campus." loading="lazy">
+                <div class="layer">
+                    <h3>NEW YORK</h3>
+                </div>
+            </div>
+            <div class="campus-col" data-aos="zoom-in" data-aos-delay="300">
+                <img decoding="async" src="img/washington.png" alt="Photo of Washington campus." loading="lazy">
+                <div class="layer">
+                    <h3>WASHINGTON</h3>
+                </div>
             </div>
         </div>
-        <div class="course-col" data-aos="fade-up" data-aos-delay="300">
-            <img src="https://soft.stjohncouncil.co.in/Upload/COMMUNITYMEDICALSERVICESANDESSENTIALDRUGS.png" alt="Diploma in Ophthalmic Assistant" class="course-img">
-            <h3>Diploma in Ophthalmic Assistant</h3>
-            <p>Specialize in eye care and assist ophthalmologists. This program covers vision testing, patient care, and the use of ophthalmic equipment.</p>
-            <div class="course-meta">
-                <span class="duration"><i class="fas fa-calendar-alt"></i> 2 Years</span>
-                <a href="contact.html" class="apply-btn">Apply Now <i class="fas fa-arrow-right"></i></a>
+    </section>
+
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>We provide state-of-the-art facilities to ensure a comprehensive and enriching learning environment for our students.</p>
+        <div class="row">
+            <div class="facilities-col" data-aos="fade-right">
+                <img decoding="async" src="img/library.png" alt="University library with many books." loading="lazy">
+                <h3>World Class Library</h3>
+                <p>Our library houses a vast collection of books, journals, and digital resources to support your academic journey.</p>
+            </div>
+            <div class="facilities-col" data-aos="fade-up">
+                <img decoding="async" src="img/basketball.png" alt="Basketball court." loading="lazy">
+                <h3>Largest Play Ground</h3>
+                <p>Stay active and healthy with our expansive sports facilities, including basketball courts, soccer fields, and more.</p>
+            </div>
+            <div class="facilities-col" data-aos="fade-left">
+                <img decoding="async" src="img/cafeteria.png" alt="University cafeteria with healthy food." loading="lazy">
+                <h3>Tasty and Healthy Food</h3>
+                <p>Our cafeteria offers a variety of delicious and nutritious meal options to fuel your mind and body.</p>
             </div>
         </div>
-        <div class="course-col" data-aos="fade-up" data-aos-delay="100">
-            <img src="https://soft.stjohncouncil.co.in/Upload/COMMUNITYMEDICALSERVICESANDESSENTIALDRUGS.png" alt="Diploma in Medical Radiography" class="course-img">
-            <h3>Diploma in Medical Radiography</h3>
-            <p>Learn to produce high-quality diagnostic images using various imaging technologies like X-rays, CT scans, and MRIs to assist in patient diagnosis.</p>
-            <div class="course-meta">
-                <span class="duration"><i class="fas fa-calendar-alt"></i> 2 Years</span>
-                <a href="contact.html" class="apply-btn">Apply Now <i class="fas fa-arrow-right"></i></a>
+    </section>
+
+    <section class="testimonials">
+        <h1>What Our Student Says</h1>
+        <p>Discover what our students have to say about their experience and journey with us.</p>
+        <div class="row">
+            <div class="testimonials-col" data-aos="fade-right">
+                <img decoding="async" src="img/user2.jpg" alt="Photo of Edward Bay." loading="lazy">
+                <div>
+                    <p>The support from the faculty is incredible. They are always willing to help and have pushed me to achieve things I never thought possible. A truly inspiring place to learn.</p>
+                    <h3>Edward Bay</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonials-col" data-aos="fade-left">
+                <img decoding="async" src="img/user1.jpg" alt="Photo of Christine Berkley." loading="lazy">
+                <div>
+                    <p>Being a part of this university has been a life-changing experience. The diverse community and the wealth of resources available have been instrumental in my personal and professional growth.</p>
+                    <h3>Christine Berkley</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
             </div>
         </div>
-        <div class="course-col" data-aos="fade-up" data-aos-delay="200">
-            <img src="https://soft.stjohncouncil.co.in/Upload/COMMUNITYMEDICALSERVICESANDESSENTIALDRUGS.png" alt="Diploma in Cath Lab Technology" class="course-img">
-            <h3>Diploma in Cath Lab Technology</h3>
-            <p>Train to assist cardiologists in cardiac catheterization procedures, operating advanced equipment to diagnose and treat heart conditions.</p>
-            <div class="course-meta">
-                <span class="duration"><i class="fas fa-calendar-alt"></i> 2 Years</span>
-                <a href="contact.html" class="apply-btn">Apply Now <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-        <div class="course-col" data-aos="fade-up" data-aos-delay="300">
-            <img src="https://soft.stjohncouncil.co.in/Upload/COMMUNITYMEDICALSERVICESANDESSENTIALDRUGS.png" alt="Diploma in Dental Hygiene" class="course-img">
-            <h3>Diploma in Dental Hygiene</h3>
-            <p>Focus on preventative oral health care, learning to clean teeth, examine patients for oral diseases, and provide other essential dental care.</p>
-            <div class="course-meta">
-                <span class="duration"><i class="fas fa-calendar-alt"></i> 2 Years</span>
-                <a href="contact.html" class="apply-btn">Apply Now <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-        <div class="course-col" data-aos="fade-up" data-aos-delay="100">
-            <img src="https://soft.stjohncouncil.co.in/Upload/COMMUNITYMEDICALSERVICESANDESSENTIALDRUGS.png" alt="Diploma in X-Ray and ECG Technician" class="course-img">
-            <h3>Diploma in X-Ray and ECG Technician</h3>
-            <p>Master the techniques of performing X-ray imaging and electrocardiograms (ECG) to help doctors diagnose a wide range of medical issues.</p>
-            <div class="course-meta">
-                <span class="duration"><i class="fas fa-calendar-alt"></i> 2 Years</span>
-                <a href="contact.html" class="apply-btn">Apply Now <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-        <div class="course-col" data-aos="fade-up" data-aos-delay="200">
-            <img src="https://soft.stjohncouncil.co.in/Upload/COMMUNITYMEDICALSERVICESANDESSENTIALDRUGS.png" alt="Diploma in Clinical Neuro Technology" class="course-img">
-            <h3>Diploma in Clinical Neuro Technology</h3>
-            <p>Learn to record and analyze electrical activity in the brain and nervous system to help diagnose disorders like epilepsy and sleep disorders.</p>
-            <div class="course-meta">
-                <span class="duration"><i class="fas fa-calendar-alt"></i> 2 Years</span>
-                <a href="contact.html" class="apply-btn">Apply Now <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-        <div class="course-col" data-aos="fade-up" data-aos-delay="300">
-            <img src="https://soft.stjohncouncil.co.in/Upload/COMMUNITYMEDICALSERVICESANDESSENTIALDRUGS.png" alt="Diploma in Dialysis & Technician" class="course-img">
-            <h3>Diploma in Dialysis & Technician</h3>
-            <p>Become proficient in operating dialysis machines to provide life-saving treatment for patients with kidney failure.</p>
-            <div class="course-meta">
-                <span class="duration"><i class="fas fa-calendar-alt"></i> 2 Years</span>
-                <a href="contact.html" class="apply-btn">Apply Now <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-        <div class="course-col" data-aos="fade-up" data-aos-delay="100">
-            <img src="https://soft.stjohncouncil.co.in/Upload/COMMUNITYMEDICALSERVICESANDESSENTIALDRUGS.png" alt="Diploma in MRI Technician" class="course-img">
-            <h3>Diploma in MRI Technician</h3>
-            <p>Specialize in operating Magnetic Resonance Imaging (MRI) scanners to create detailed images of organs and tissues for medical diagnosis.</p>
-            <div class="course-meta">
-                <span class="duration"><i class="fas fa-calendar-alt"></i> 2 Years</span>
-                <a href="contact.html" class="apply-btn">Apply Now <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-        <div class="course-col" data-aos="fade-up" data-aos-delay="200">
-            <img src="https://soft.stjohncouncil.co.in/Upload/COMMUNITYMEDICALSERVICESANDESSENTIALDRUGS.png" alt="Diploma in CT Technician" class="course-img">
-            <h3>Diploma in CT Technician</h3>
-            <p>Train to use Computed Tomography (CT) scanners to produce cross-sectional images of the body, aiding in precise diagnosis.</p>
-            <div class="course-meta">
-                <span class="duration"><i class="fas fa-calendar-alt"></i> 2 Years</span>
-                <a href="contact.html" class="apply-btn">Apply Now <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-        <div class="course-col" data-aos="fade-up" data-aos-delay="300">
-            <img src="https://soft.stjohncouncil.co.in/Upload/COMMUNITYMEDICALSERVICESANDESSENTIALDRUGS.png" alt="Diploma in Ortho Assistant" class="course-img">
-            <h3>Diploma in Ortho Assistant</h3>
-            <p>Learn to assist orthopedic surgeons in treating injuries and diseases of the musculoskeletal system, including casting and patient care.</p>
-            <div class="course-meta">
-                <span class="duration"><i class="fas fa-calendar-alt"></i> 2 Years</span>
-                <a href="contact.html" class="apply-btn">Apply Now <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-        <div class="course-col" data-aos="fade-up" data-aos-delay="100">
-            <img src="https://soft.stjohncouncil.co.in/Upload/COMMUNITYMEDICALSERVICESANDESSENTIALDRUGS.png" alt="Diploma in Critical Care Technician" class="course-img">
-            <h3>Diploma in Critical Care Technician</h3>
-            <p>Gain skills to monitor and care for critically ill patients in intensive care units (ICUs), working with advanced life support equipment.</p>
-            <div class="course-meta">
-                <span class="duration"><i class="fas fa-calendar-alt"></i> 2 Years</span>
-                <a href="contact.html" class="apply-btn">Apply Now <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-        <div class="course-col" data-aos="fade-up" data-aos-delay="200">
-            <img src="https://soft.stjohncouncil.co.in/Upload/COMMUNITYMEDICALSERVICESANDESSENTIALDRUGS.png" alt="Diploma in Medical Assistant" class="course-img">
-            <h3>Diploma in Medical Assistant</h3>
-            <p>Develop a versatile skill set for both clinical and administrative tasks to support doctors and other healthcare professionals in various settings.</p>
-            <div class="course-meta">
-                <span class="duration"><i class="fas fa-calendar-alt"></i> 2 Years</span>
-                <a href="contact.html" class="apply-btn">Apply Now <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-        <div class="course-col" data-aos="fade-up" data-aos-delay="300">
-            <img src="https://soft.stjohncouncil.co.in/Upload/COMMUNITYMEDICALSERVICESANDESSENTIALDRUGS.png" alt="Diploma in Optometry and Contact Lens Technician" class="course-img">
-            <h3>Diploma in Optometry and Contact Lens Technician</h3>
-            <p>Master the skills to assist optometrists in vision care, including conducting eye exams and fitting patients with contact lenses.</p>
-            <div class="course-meta">
-                <span class="duration"><i class="fas fa-calendar-alt"></i> 2 Years</span>
-                <a href="contact.html" class="apply-btn">Apply Now <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
-
-
-<section class="campus">
-    <h1>Our Global Campus</h1>
-    <p>We have a diverse and widespread presence, with campuses in major cities across the globe.</p>
-
-    <div class="row">
-        <div class="campus-col" data-aos="zoom-in" data-aos-delay="100">
-            <img decoding="async" src="img/london.png">
-            <div class="layer">
-                <h3>LONDON</h3>
-            </div>
-        </div>
-        <div class="campus-col" data-aos="zoom-in" data-aos-delay="200">
-            <img decoding="async" src="img/newyork.png">
-            <div class="layer">
-                <h3>NEW YORK</h3>
-            </div>
-        </div>
-        <div class="campus-col" data-aos="zoom-in" data-aos-delay="300">
-            <img decoding="async" src="img/washington.png">
-            <div class="layer">
-                <h3>WASHINGTON</h3>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-<section class="facilities">
-    <h1>Our Facilities</h1>
-    <p>We provide state-of-the-art facilities to ensure a comprehensive and enriching learning environment for our students.</p>
-
-    <div class="row">
-        <div class="facilities-col" data-aos="fade-right">
-            <img decoding="async" src="img/library.png">
-            <h3>World Class Library</h3>
-            <p>Our library houses a vast collection of books, journals, and digital resources to support your academic journey.</p>
-        </div>
-        <div class="facilities-col" data-aos="fade-up">
-            <img decoding="async" src="img/basketball.png">
-            <h3>Largest Play Ground</h3>
-            <p>Stay active and healthy with our expansive sports facilities, including basketball courts, soccer fields, and more.</p>
-        </div>
-        <div class="facilities-col" data-aos="fade-left">
-            <img decoding="async" src="img/cafeteria.png">
-            <h3>Tasty and Healthy Food</h3>
-            <p>Our cafeteria offers a variety of delicious and nutritious meal options to fuel your mind and body.</p>
-        </div>
-    </div>
-</section>
-
-
-
-
-<section class="testimonials">
-    <h1>What Our Student Says</h1>
-    <p>Discover what our students have to say about their experience and journey with us.</p>
-
-    <div class="row">
-        <div class="testimonials-col" data-aos="fade-right">
-            <img decoding="async" src="img/user2.jpg">
-            <div>
-                <p>The support from the faculty is incredible. They are always willing to help and have pushed me to achieve things I never thought possible. A truly inspiring place to learn.</p>
-                <h3>Edward Bay</h3>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-            </div>
-        </div>
-        <div class="testimonials-col" data-aos="fade-left">
-            <img decoding="async" src="img/user1.jpg">
-            <div>
-                <p>Being a part of this university has been a life-changing experience. The diverse community and the wealth of resources available have been instrumental in my personal and professional growth.</p>
-                <h3>Christine Berkley</h3>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-<section class="cta" data-aos="zoom-in">
-    <h1>Enroll for our various online courses <br> Anywhere from The World</h1>
-    <a href="contact.html" class="hi-btn">CONTACT US <i class="fas fa-phone"></i></a>
-</section>
-
-
-
+    <section class="cta" data-aos="zoom-in">
+        <h1>Enroll for our various online courses <br> Anywhere from The World</h1>
+        <a href="contact.html" class="btn">CONTACT US <i class="fas fa-phone"></i></a>
+    </section>
+</main>
 
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-col">
-            <a href="index.html"><img src="img/logo.png" alt="University Logo" class="footer-logo"></a>
+            <a href="index.html"><img src="img/logo.png" alt="Eduford University Logo" class="footer-logo"></a>
             <p>We are committed to providing a world-class education that prepares students to be leaders in their fields. Join us and become part of a tradition of excellence.</p>
         </div>
         <div class="footer-col">
@@ -300,22 +175,24 @@
         </div>
         <div class="footer-col">
             <h4>Contact Us</h4>
-            <p><i class="fas fa-map-marker-alt"></i> XYZ Road, B Building<br>Bahraich, Uttar Pradesh, INDIA</p>
-            <p><i class="fas fa-envelope"></i> Email: info@dailywebdesign.com</p>
-            <p><i class="fas fa-phone"></i> Phone: +91 95656 66535</p>
+            <address>
+                <p><i class="fas fa-map-marker-alt"></i> XYZ Road, B Building<br>Bahraich, Uttar Pradesh, INDIA</p>
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:info@dailywebdesign.com">info@dailywebdesign.com</a></p>
+                <p><i class="fas fa-phone"></i> Phone: <a href="tel:+919565666535">+91 95656 66535</a></p>
+            </address>
         </div>
         <div class="footer-col">
             <h4>Follow Us</h4>
             <div class="icons">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" aria-label="Visit our Facebook page"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" aria-label="Visit our Twitter profile"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" aria-label="Visit our Instagram profile"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="Visit our LinkedIn profile"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
     </div>
     <div class="footer-bottom">
-        <p>&copy; 2024 Eduford University. All Rights Reserved. Made with <i class="fas fa-heart"></i> by Daily Web Design</p>
+        <p>&copy; 2024 Eduford University. All Rights Reserved. Made with <span class="heart-icon" aria-hidden="true">❤️</span> by Daily Web Design</p>
     </div>
 </footer>
     
@@ -325,9 +202,5 @@
   AOS.init();
 </script>
   
-
-
 </body>
 </html>
-
-
