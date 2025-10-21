@@ -692,7 +692,7 @@ footer.footer {
 .nav-links {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
 }
 
 .search-container {
@@ -815,4 +815,5 @@ footer.footer {
         width: 250px;
     }
 }
+
 
