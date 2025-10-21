@@ -13,7 +13,7 @@
     <nav>
         <a href="index.html"><img decoding="async" src="img/logo.png" alt="University Logo"></a>
         <div class="nav-links" id="navLinks">
-            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <i class="fas fa-times" id="menu-close"></i>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -22,7 +22,7 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-        <i class="fas fa-bars" onclick="showMenu()"></i>
+        <i class="fas fa-bars" id="menu-open"></i>
     </nav>
     <h1>Contact Us</h1>
 </section>
@@ -61,7 +61,7 @@
         </div>
         <div class="contact-col" data-aos="fade-left">
 
-            <form action="form-handler.php" method="post">
+            <form id="contactForm" action="form-handler.php" method="post">
                 <input type="text" name="name" placeholder="Enter Your Name" required>
                 <input type="email" name="email" placeholder="Enter Email Address" required>
                 <input type="text" name="subject" placeholder="Enter Your Subject" required>
