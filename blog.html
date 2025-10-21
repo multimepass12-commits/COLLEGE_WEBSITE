@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University Website Design - Blog</title>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -9,14 +10,15 @@
 </head>
 <body>
 
-<section class="sub-header">
+<header class="sub-header">
     <nav>
-        <a href="index.html"><img decoding="async" src="img/logo.png" alt="University Logo"></a>
+        <a href="index.html"><img decoding="async" src="img/logo.png" alt="Eduford University Logo"></a>
         <div class="nav-links" id="navLinks">
-            <i class="fas fa-times" id="menu-close"></i>
-            <div class="search-container">
-                <input type="text" id="searchInput" placeholder="Search...">
-                <ul id="searchResults"></ul>
+            <button class="nav-toggle close-btn" id="menu-close" aria-label="Close menu" aria-controls="navLinks" aria-expanded="true"><i class="fas fa-times"></i></button>
+            <div class="search-container" role="search">
+                <label for="searchInputBlog" class="sr-only">Search</label>
+                <input type="text" id="searchInputBlog" placeholder="Search...">
+                <ul id="searchResultsBlog"></ul>
             </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -26,90 +28,67 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-        <i class="fas fa-bars" id="menu-open"></i>
+        <button class="nav-toggle open-btn" id="menu-open" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false"><i class="fas fa-bars"></i></button>
     </nav>
     <h1>Latest in Medical & Health Sciences</h1>
-</section>
+</header>
 
+<main>
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left" data-aos="fade-up">
+                <img decoding="async" src="img/certificate.jpg" alt="Medical certificate and stethoscope" loading="lazy">
+                <h2>Advancements in Medical Technology and Patient Care</h2>
+                <p>The healthcare landscape is constantly evolving, driven by groundbreaking research and technological innovation. Our university is at the forefront, integrating these advancements into our curriculum to prepare the next generation of healthcare professionals. From AI-powered diagnostic tools to robotic surgery, we are committed to providing our students with exposure to the technologies that are shaping the future of medicine.</p>
+                <br>
+                <p>Our programs emphasize hands-on learning in state-of-the-art laboratories and clinical settings. Students gain practical experience with the latest medical equipment, learning how to improve diagnostic accuracy, streamline treatments, and enhance patient outcomes. We believe that a deep understanding of both theoretical principles and practical application is essential for a successful career in any medical field.</p>
+                <br>
+                <p>Explore our specialized diploma programs in areas like Medical Radiography, Cath Lab Technology, and Clinical Neuro Technology. Each course is designed to provide in-depth knowledge and skills, culminating in a valuable qualification recognized by healthcare institutions globally. We are dedicated to fostering a learning environment that encourages curiosity, critical thinking, and a commitment to lifelong learning.</p>
+                <br>
+                <p>Join our community of aspiring medical professionals and dedicated educators. Our blog serves as a platform to discuss the latest trends, share insights from the field, and connect with peers and mentors. Take the next step in your professional journey with our accredited programs and become a leader in the world of healthcare.</p>
 
-
-<section class="blog-content">
-    <div class="row">
-        <div class="blog-left" data-aos="fade-up">
-            <img decoding="async" src="img/certificate.jpg">
-            <h2>Advancements in Medical Technology and Patient Care</h2>
-            <p>The healthcare landscape is constantly evolving, driven by groundbreaking research and technological innovation. Our university is at the forefront, integrating these advancements into our curriculum to prepare the next generation of healthcare professionals. From AI-powered diagnostic tools to robotic surgery, we are committed to providing our students with exposure to the technologies that are shaping the future of medicine.</p>
-            <br>
-            <p>Our programs emphasize hands-on learning in state-of-the-art laboratories and clinical settings. Students gain practical experience with the latest medical equipment, learning how to improve diagnostic accuracy, streamline treatments, and enhance patient outcomes. We believe that a deep understanding of both theoretical principles and practical application is essential for a successful career in any medical field.</p>
-            <br>
-            <p>Explore our specialized diploma programs in areas like Medical Radiography, Cath Lab Technology, and Clinical Neuro Technology. Each course is designed to provide in-depth knowledge and skills, culminating in a valuable qualification recognized by healthcare institutions globally. We are dedicated to fostering a learning environment that encourages curiosity, critical thinking, and a commitment to lifelong learning.</p>
-            <br>
-            <p>Join our community of aspiring medical professionals and dedicated educators. Our blog serves as a platform to discuss the latest trends, share insights from the field, and connect with peers and mentors. Take the next step in your professional journey with our accredited programs and become a leader in the world of healthcare.</p>
-
-
-
-            <div class="comment-box">
-                <h3>Leave a comment</h3>
-
-                <form class="comment-form" id="commentForm" novalidate>
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="Enter Name">
-                        <div class="error-message"></div>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Enter Email">
-                        <div class="error-message"></div>
-                    </div>
-                    <div class="form-group">
-                        <textarea rows="5" name="comment" placeholder="Your Comment"></textarea>
-                        <div class="error-message"></div>
-                    </div>
-                    <button type="submit" class="hi-btn red-btn">POST COMMENT <i class="fas fa-paper-plane"></i></button>
-                </form>
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form class="comment-form" id="commentForm" novalidate>
+                        <div class="form-group">
+                            <label for="commentName" class="sr-only">Name</label>
+                            <input type="text" id="commentName" name="name" placeholder="Enter Name" required>
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="commentEmail" class="sr-only">Email</label>
+                            <input type="email" id="commentEmail" name="email" placeholder="Enter Email" required>
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="commentText" class="sr-only">Comment</label>
+                            <textarea rows="5" id="commentText" name="comment" placeholder="Your Comment" required></textarea>
+                            <div class="error-message"></div>
+                        </div>
+                        <button type="submit" class="btn btn-outline-primary">POST COMMENT <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
             </div>
-
+            <aside class="blog-right" data-aos="fade-left">
+                <h3>Post Categories</h3>
+                <ul>
+                    <li><a href="#"><span><i class="fas fa-heartbeat"></i> Cardiology</span> <span>18</span></a></li>
+                    <li><a href="#"><span><i class="fas fa-x-ray"></i> Radiology</span> <span>25</span></a></li>
+                    <li><a href="#"><span><i class="fas fa-tooth"></i> Dental Hygiene</span> <span>20</span></a></li>
+                    <li><a href="#"><span><i class="fas fa-users"></i> Community Health</span> <span>31</span></a></li>
+                    <li><a href="#"><span><i class="fas fa-eye"></i> Ophthalmology</span> <span>15</span></a></li>
+                    <li><a href="#"><span><i class="fas fa-vial"></i> Clinical Research</span> <span>22</span></a></li>
+                    <li><a href="#"><span><i class="fas fa-hospital-user"></i> Healthcare Management</span> <span>12</span></a></li>
+                </ul>
+            </aside>
         </div>
-        <div class="blog-right" data-aos="fade-left">
-            <h3>Post Categories</h3>
-            <div>
-                <span><i class="fas fa-heartbeat"></i> Cardiology</span>
-                <span>18</span>
-            </div>
-            <div>
-                <span><i class="fas fa-x-ray"></i> Radiology</span>
-                <span>25</span>
-            </div>
-            <div>
-                <span><i class="fas fa-tooth"></i> Dental Hygiene</span>
-                <span>20</span>
-            </div>
-            <div>
-                <span><i class="fas fa-users"></i> Community Health</span>
-                <span>31</span>
-            </div>
-            <div>
-                <span><i class="fas fa-eye"></i> Ophthalmology</span>
-                <span>15</span>
-            </div>
-            <div>
-                <span><i class="fas fa-vial"></i> Clinical Research</span>
-                <span>22</span>
-            </div>
-            <div>
-                <span><i class="fas fa-hospital-user"></i> Healthcare Management</span>
-                <span>12</span>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
+    </section>
+</main>
 
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-col">
-            <a href="index.html"><img src="img/logo.png" alt="University Logo" class="footer-logo"></a>
+            <a href="index.html"><img src="img/logo.png" alt="Eduford University Logo" class="footer-logo"></a>
             <p>We are committed to providing a world-class education that prepares students to be leaders in their fields. Join us and become part of a tradition of excellence.</p>
         </div>
         <div class="footer-col">
@@ -124,22 +103,24 @@
         </div>
         <div class="footer-col">
             <h4>Contact Us</h4>
-            <p><i class="fas fa-map-marker-alt"></i> XYZ Road, B Building<br>Bahraich, Uttar Pradesh, INDIA</p>
-            <p><i class="fas fa-envelope"></i> Email: info@dailywebdesign.com</p>
-            <p><i class="fas fa-phone"></i> Phone: +91 95656 66535</p>
+            <address>
+                <p><i class="fas fa-map-marker-alt"></i> XYZ Road, B Building<br>Bahraich, Uttar Pradesh, INDIA</p>
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:info@dailywebdesign.com">info@dailywebdesign.com</a></p>
+                <p><i class="fas fa-phone"></i> Phone: <a href="tel:+919565666535">+91 95656 66535</a></p>
+            </address>
         </div>
         <div class="footer-col">
             <h4>Follow Us</h4>
             <div class="icons">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" aria-label="Visit our Facebook page"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" aria-label="Visit our Twitter profile"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" aria-label="Visit our Instagram profile"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="Visit our LinkedIn profile"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
     </div>
     <div class="footer-bottom">
-        <p>&copy; 2024 Eduford University. All Rights Reserved. Made with <i class="fas fa-heart"></i> by Daily Web Design</p>
+        <p>&copy; 2024 Eduford University. All Rights Reserved. Made with <span class="heart-icon" aria-hidden="true">❤️</span> by Daily Web Design</p>
     </div>
 </footer>
 
