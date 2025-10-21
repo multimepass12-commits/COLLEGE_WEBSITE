@@ -14,6 +14,10 @@
         <a href="index.html"><img decoding="async" src="img/logo.png" alt="University Logo"></a>
         <div class="nav-links" id="navLinks">
             <i class="fas fa-times" id="menu-close"></i>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <ul id="searchResults"></ul>
+            </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -47,10 +51,19 @@
             <div class="comment-box">
                 <h3>Leave a comment</h3>
 
-                <form class="comment-form" id="commentForm">
-                    <input type="text" name="name" placeholder="Enter Name" required>
-                    <input type="email" name="email" placeholder="Enter Email" required>
-                    <textarea rows="5" name="comment" placeholder="Your Comment" required></textarea>
+                <form class="comment-form" id="commentForm" novalidate>
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Enter Name">
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Enter Email">
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" name="comment" placeholder="Your Comment"></textarea>
+                        <div class="error-message"></div>
+                    </div>
                     <button type="submit" class="hi-btn red-btn">POST COMMENT <i class="fas fa-paper-plane"></i></button>
                 </form>
             </div>
