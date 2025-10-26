@@ -34,7 +34,7 @@
 
 
 <section class="location" data-aos="fade-in">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2160.611471073663!2d81.57344355545641!3d27.532344403493028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3999a984a4b2fefb%3A0x942cdd3ea3f9a07c!2sB.B.S%20Group%20of%20Educational%20Institutes!5e0!3m2!1sen!2sin!4v1703841396641!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2160.611471073663!2d81.57344355545641!3d27.532344403493028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3999a984a4b2fefb%3A0x942cdd3ea3f9a07c!2sB.B.S%20Group%20of%20Educational%20Institutes!5e0!3m2!1sen!2sin!4v1703841396641!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Location of B.B.S Group of Educational Institutes"></iframe>
 </section>
 
 
@@ -67,19 +67,19 @@
 
             <form id="contactForm" action="form-handler.php" method="post" novalidate>
                 <div class="form-group">
-                    <input type="text" name="name" placeholder="Enter Your Name">
+                    <input type="text" name="name" placeholder="Enter Your Name" aria-label="Your Name" required>
                     <div class="error-message"></div>
                 </div>
                 <div class="form-group">
-                    <input type="email" name="email" placeholder="Enter Email Address">
+                    <input type="email" name="email" placeholder="Enter Email Address" aria-label="Email Address" required>
                     <div class="error-message"></div>
                 </div>
                 <div class="form-group">
-                    <input type="text" name="subject" placeholder="Enter Your Subject">
+                    <input type="text" name="subject" placeholder="Enter Your Subject" aria-label="Subject" required>
                     <div class="error-message"></div>
                 </div>
                 <div class="form-group">
-                    <textarea rows="8" name="message" placeholder="Message"></textarea>
+                    <textarea rows="8" name="message" placeholder="Message" aria-label="Message" required></textarea>
                     <div class="error-message"></div>
                 </div>
                 <button type="submit" class="hi-btn red-btn">Send Message <i class="fas fa-paper-plane"></i></button>
